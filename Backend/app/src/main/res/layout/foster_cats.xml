@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dspcalogo2"
+        android:id="@+id/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Cats Available for adoption:"
+        android:layout_marginTop="120dp"
+        android:id="@+id/text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/holo_orange_dark" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="285dp"
+                android:layout_height="313dp"
+                app:srcCompat="@drawable/william"
+                android:id="@+id/william" />
+
+            <TextView
+                android:text="Hello there. My name is William. I came to the DSPCA with a bad wound on my face, but with lots of care from the veterinary team here I’m all better now but I need somewhere to recover."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/williaminfo"
+                android:textColor="@android:color/background_dark" />
+
+            <ImageView
+                android:layout_width="309dp"
+                android:layout_height="221dp"
+                app:srcCompat="@drawable/springandrain"
+                android:id="@+id/springrain" />
+
+            <TextView
+                android:text="Hey there. We’re Spring and Rain, two 4 year old sisters. We were found in an abandoned area with injuries that need tending to daily so we need a home until we can be fixed up."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/springandraininfo" />
+
+            <ImageView
+                android:layout_width="266dp"
+                android:layout_height="175dp"
+                app:srcCompat="@drawable/sephore"
+                android:id="@+id/sephore" />
+
+            <TextView
+                android:text="Hey there, I’m Sephore. I’m a 2 year old lad. I arrived at the DSPCA as a stray, with a broken leg and now I need somewhere I can recover."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sephoreinfo"
+                android:textColor="@android:color/background_dark" />
+
+            <ImageView
+                android:layout_width="242dp"
+                android:layout_height="283dp"
+                app:srcCompat="@drawable/mrbond"
+                android:id="@+id/mrbond" />
+
+            <TextView
+                android:text="Hello there. I’m Mr Bond, a 3 year old male. My owner passed away and I'm very scared and confused, I need somewhere calm that I can adjust to being without my previous owner."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mrbondinfo"
+                android:textColor="@android:color/background_dark" />
+
+            <ImageView
+                android:layout_width="247dp"
+                android:layout_height="265dp"
+                app:srcCompat="@drawable/marigold"
+                android:id="@+id/marigold" />
+
+            <TextView
+                android:text="Hey, I’m Marigold, a sweet older lady around 12 years old. I'm too old to be in the cattery and need somewhere to stay until I find a forever home."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/marigoldinfo"
+                android:textColor="@android:color/background_dark" />
+
+            <ImageView
+                android:layout_width="247dp"
+                android:layout_height="299dp"
+                app:srcCompat="@drawable/hayley"
+                android:id="@+id/hayley" />
+
+            <TextView
+                android:text="Hi All! My name is Hayley I'm a 2-3 year old and just gave birth to 4 kittens, so we all need a place to stay until they're old enough to go to a forever home."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hayleyinfo"
+                android:textColor="@android:color/background_dark" />
+
+            <ImageView
+                android:layout_width="209dp"
+                android:layout_height="202dp"
+                app:srcCompat="@drawable/clarence"
+                android:id="@+id/Clarence" />
+
+            <TextView
+                android:text="Hello, I’m Clarence. I’m a super stunning older lad. When I arrived at the DSPCA I had a broken pelvis and now I need somewhere I can recover from surgery."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/clarenceinfo"
+                android:textColor="@android:color/background_dark" />
+
+            <ImageView
+                android:layout_width="209dp"
+                android:layout_height="204dp"
+                app:srcCompat="@drawable/bob"
+                android:id="@+id/bob" />
+
+            <TextView
+                android:text="My name’s Bob, I’m the sweetest 3- 4 year old boy. I came to the DSPCA through the Trap, Neuter and Release program, but when the veterinary team met me, they realized I wasn’t feral at all but I do need to get used to living in a home again so I need a foster home where I can adjust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bobinfo"
+                android:textColor="@android:color/background_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

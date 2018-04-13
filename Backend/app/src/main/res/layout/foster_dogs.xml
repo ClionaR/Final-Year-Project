@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dspcalogo2"
+        android:id="@+id/imageView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Dogs for Adoption:"
+        android:layout_marginTop="126dp"
+        android:id="@+id/text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/text">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="203dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/yasmine"
+                android:id="@+id/yasmine" />
+
+            <TextView
+                android:text="Hi everyone, my name is Yasmine. I’m a 1 year old little Terrier cross. I was found wandering all alone by the dog warden and brought to the pound. I was brought to the DSPCA but I'm a bit underweight, I need someone who will fatten me up for my new forever home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tilly"
+                android:id="@+id/yasmineinfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/stella"
+                android:id="@+id/stella" />
+
+            <TextView
+                android:text="Hi everyone, my name is Stella and I’m a 16 week old female Terrier Shepherd cross puppy. I came to the DSPCA after being brought to a Vet Clinic by someone who found me all alone and bleeding, I need somewhere to recover from my injury."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/snickers"
+                android:id="@+id/stellainfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/precious"
+                android:id="@+id/precious" />
+
+            <TextView
+                android:text="Hello everyone, my name is Precious and I’m a 3+ year old female Corgi Cross. I came to the DSPCA from another rescue. I just had puppies and we all need to go into foster care for a few weeks."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/marley"
+                android:id="@+id/preciousinfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/lucky"
+                android:id="@+id/lucky" />
+
+            <TextView
+                android:text="Hi everyone. My name is Lucky and I’m a 2 year Collie. I came to the DSPCA from another rescue. I was a very lucky boy as I was going to be shot because I was not wanted. Now I need somewhere to recover mentally because I'm a bit nervous around people and I don't do well in a kennel environment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/lola"
+                android:id="@+id/luckyinfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/lexi"
+                android:id="@+id/lexi" />
+
+            <TextView
+                android:text="Hi there, my name is Lexi and I’m a 6 year old female Staffordshire Bull Terrier. I’m looking for a foster home because my previous owner can not longer look after me. I was heavily pregnant and I had 3 puppies so I need someone to look after all of us."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/lexi"
+                android:id="@+id/lexiinfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/jane"
+                android:id="@+id/jane" />
+
+            <TextView
+                android:text="Hi there, my name is Jane and I’m a stunning 1 year old female Doberman cross. I was brought to the DSPCA by the inspectors who found me with an injured hind quarter, I'm looking for a temporary home where I can recover before finding my forever home. "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/jane"
+                android:id="@+id/janeinfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/enya"
+                android:id="@+id/enya" />
+
+            <TextView
+                android:text="Hi there, my name is Enya and I’m a stunning sweet 2.5 year old Lurcher. I'm here at the DSPCA because I was found very underweight and with an injured leg. I'm looking for a home where I can recover in peace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/enya"
+                android:id="@+id/enyainfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/denver"
+                android:id="@+id/denver" />
+
+            <TextView
+                android:text="Hi everyone, my name is Denver and I’m a 7 year old Labrador cross boy. I came to the DSPCA after I was found emaciated wander on the side of the street. I need somewhere quite and calm to help me recover, physically and mentally"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/denver"
+                android:id="@+id/denverinfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cracker"
+                android:id="@+id/cracker" />
+
+            <TextView
+                android:text="Hi everyone, my name is Cracker and I’m a 3 year old female Foxhound. I came to the DSPCA from another rescue and am still recovering from injury I came here with my mum Jingles."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/cracker"
+                android:id="@+id/crackerinfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/chico"
+                android:id="@+id/chico" />
+
+            <TextView
+                android:text="Hi everyone, my name is Chico and I’m a 1 year old Chihuahua cross boy. I came to the DSPCA with my friend, Sally, after the inspectors came and took us away because of neglect."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/chico"
+                android:id="@+id/chicoinfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/captain"
+                android:id="@+id/captain" />
+
+            <TextView
+                android:text="Hi everyone, my name is Captain and I’m a 1 year old German Shepherd boy. I came to the DSPCA after being found injured. Someone brought me to a vet clinic and after noone reclaimed me, I was sent to the DSPCA to get treated, I need somewhere I can finish recovering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/captain"
+                android:id="@+id/captaininfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bonbon"
+                android:id="@+id/bonbon" />
+
+            <TextView
+                android:text="Hi guys my name is Bon Bon and I’m a 2-3 year old female Jack Russell Terrier. I came to the DSPCA after being found straying on a beach. I need somewhere to gain some weight."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/bonbon"
+                android:id="@+id/bonboninfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ben"
+                android:id="@+id/ben" />
+
+            <TextView
+                android:text="Hi there, my name is Ben and I’m a 5-6 year old male Labrador. I came to the DSPCA as my owner could no longer take care of me. I have an old injury on my leg which needs a sergical procedure then I need somewhere to recover before finding my forever home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/ben"
+                android:id="@+id/beninfo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/atlas"
+                android:id="@+id/atlas" />
+
+            <TextView
+                android:text="Hi everyone, my name is Atlas and I’m a 10 week old Collie Terrier cross. I came to the DSPCA through the inspectors as an unwanted puppy. I just need some fattening up before I can find a forever home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/atlas"
+                android:id="@+id/atlasinfo" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

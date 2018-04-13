@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dspcalogo2"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="19dp"
+                android:id="@+id/logo"
+                android:paddingLeft="110dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Dogs for Adoption:"
+                android:layout_marginTop="20dp"
+                android:id="@+id/text"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="23dp"
+                android:layout_marginStart="23dp"
+                android:textColor="@android:color/holo_orange_dark" />
+
+
+
+            <ImageView
+                android:layout_width="264dp"
+                android:layout_height="182dp"
+                app:srcCompat="@drawable/tilly"
+                android:id="@+id/tilly"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:text="Hi everyone, my name is Tilly and I’m a 1 year old Whippet Lurcher cross. I was brought to the DSPCA by a kind member of the public after been thrown from a van with my friend Laura."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tilly"
+                android:id="@+id/tillyinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="248dp"
+                app:srcCompat="@drawable/snickers"
+                android:layout_alignBottom="@+id/tilly"
+                android:id="@+id/snickers" />
+
+            <TextView
+                android:text="Hi everyone, my name is Snickers and I’m a 6 year old Staffordshire Bull Terrier boy. I came to the DSPCA after being found abandoned. No one came to reclaim me so I am here now hoping to find a forever home soon!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/snickers"
+                android:id="@+id/snickersinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="256dp"
+                android:layout_height="245dp"
+                app:srcCompat="@drawable/marley"
+                android:id="@+id/marley" />
+
+            <TextView
+                android:text="Hi everyone, my name is Marley and I’m a 9 year old Chocolate Labrador Retriever. I came to the DSPCA from the local Pound. No one came to reclaim me so I’m now looking for my forever home."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/marley"
+                android:id="@+id/marleyinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="239dp"
+                android:layout_height="218dp"
+                app:srcCompat="@drawable/lola"
+                android:id="@+id/lola" />
+
+            <TextView
+                android:text="Hi everyone, my name is Lola and I’m a 1 year old Terrier Cross. I’m looking for a home because my previous owner could not longer look after me. I had too much energy for her. I’m only a young dog and I love to play and run around. Unfortunately it was just the wrong home for me."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/lola"
+                android:id="@+id/lolainfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="235dp"
+                android:layout_height="229dp"
+                app:srcCompat="@drawable/jingles"
+                android:id="@+id/jingles" />
+
+            <TextView
+                android:text="Hi everyone, my name is Jingles and I’m a 7 year old female Foxhound. I came to the DSPCA from another rescue I came here with my daughter Cracker to find a new home."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/jingles"
+                android:id="@+id/jinglesinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="224dp"
+                app:srcCompat="@drawable/finn"
+                android:id="@+id/finn" />
+
+            <TextView
+                android:text="Hi guys my name is Finn and I’m a 10 year old Terrier Cross boy. I look very young for my age don’t I? The staff here say I look like a Disney dog! I was brought into the DSPCA by the inspectors after my owner could no longer look after me. I have had my teeth cleaned and one or two removed and now I’m ready to find a forever home."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/finn"
+                android:id="@+id/finninfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="231dp"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/emerson"
+                android:id="@+id/emerson" />
+
+            <TextView
+                android:text="I’M OUT ON FOSTER TO ADOPT Hi everyone my name is Emerson and I’m a stunning 6 month old Lurcher. I am the sweetest boy with a big heart who’s looking for a loving home. I’ve been very unlucky in finding a forever home and through no fault of my own, my previous owners have been unable to keep me :o(."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/emerson"
+                android:id="@+id/emersoninfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="225dp"
+                android:layout_height="247dp"
+                app:srcCompat="@drawable/crystal"
+                android:id="@+id/crystal"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:text="Hi everyone, my name is Crystal and I’m a 17 week old Chihuahua cross girl. I came to the DSPCA through the inspectors here. Luckily, now I have the opportunity to find a loving forever home. I’ve been in a foster home the last few weeks."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/crystal"
+                android:id="@+id/crystalinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="217dp"
+                android:layout_height="211dp"
+                app:srcCompat="@drawable/coco"
+                android:id="@+id/coco" />
+
+            <TextView
+                android:text="I’M ON FOSTER TO ADOPT Hi guys my name is Coco and I’m a 5 year old female Yorkshire Terrier cross. I came to the DSPCA after being found injured and alone. I had an injured leg and an upset stomach. The vets here at the shelter were very good to me and now I’m all better!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/coco"
+                android:id="@+id/cocoinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="226dp"
+                android:layout_height="181dp"
+                app:srcCompat="@drawable/champ"
+                android:id="@+id/champ" />
+
+            <TextView
+                android:text="Hi everyone, my name is Champ and I’m a 1 year old male Husky. I was found along a busy road with an injury all around my neck. This could have been from a chain or a rope tied around my neck that I was trying to get out of, so I feel very lucky to have been found and to be with the DSPCA now!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/champ"
+                android:id="@+id/champinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="226dp"
+                android:layout_height="173dp"
+                app:srcCompat="@drawable/candy"
+                android:id="@+id/candy" />
+
+            <TextView
+                android:text="I’M ON FOSTER TO ADOPT Hi everyone, my name is Candy and I’m a 9 year old female Shih Tzu. I came to the DSPCA from the pound after I was found as a stray. I could hardly walk and was so very sick. After a veterinary examination it was discovered that I was pregnant and that I also had a heart condition. The staff took really good care of me to make sure that I was comfortable and not in any pain. I had 6 puppies all of which were healthy and happy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/candy"
+                android:id="@+id/candyinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="225dp"
+                android:layout_height="227dp"
+                app:srcCompat="@drawable/bingo"
+                android:id="@+id/bingo" />
+
+            <TextView
+                android:text=" 25 Mar Bingo Hi there, my name is Bingo and I’m an 8+ year old male Terrier Cross. I came to the DSPCA after a very kind human picked up. I was found all alone in the snow. The staff had hoped that my owner who come and reclaim me but sadly no one did."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/bingo"
+                android:id="@+id/bingoinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="204dp"
+                android:layout_height="193dp"
+                app:srcCompat="@drawable/barry"
+                android:id="@+id/barry" />
+
+            <TextView
+                android:text="Hi everyone, my name is Barry and I’m a 5 year old Boxer Bulldog cross. I was brought to the DSPCA by one of the inspectors after being found in a bad way. I had lots of pressure sores all over my body from sleeping on a hard surface for a very long time. My ears were also very dirty and I was feeling very down. I’ve gotten all the care I need with the wonderful vets here, and I’m now ready to find a forever home."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/barry"
+                android:id="@+id/barryinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="209dp"
+                android:layout_height="221dp"
+                app:srcCompat="@drawable/ada"
+                android:id="@+id/ada" />
+
+            <TextView
+                android:text="Hi everyone, my name is Ada and I’m a 2.5 year old female English Bulldog. I came to the DSPCA with my friend, Church, after my owners could no longer look after us. We were nervous when we first came here but now we’re happy and healthy and I’m ready to find a new home!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/ada"
+                android:id="@+id/adainfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

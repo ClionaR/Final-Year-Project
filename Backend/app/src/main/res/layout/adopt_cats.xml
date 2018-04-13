@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dspcalogo2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:id="@+id/logo"
+                android:paddingLeft="110dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Cats Available for adoption:"
+                android:layout_marginTop="20dp"
+                android:id="@+id/text"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="136dp"
+                android:layout_height="123dp"
+                app:srcCompat="@drawable/whisper"
+                android:id="@+id/whisper"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:text="Hello! My name is whisper. I was living rough on the streets when some kind people brought me to the DSPCA. My ear is shrivelled up from an old injury but it doesn’t bother me. I’m a very chilled, laid back guy. I’m super affectionate and love people. "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/whisperinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark"
+                android:textColorHighlight="@android:color/background_light" />
+
+            <ImageView
+                android:layout_width="132dp"
+                android:layout_height="131dp"
+                app:srcCompat="@drawable/snowball"
+                android:id="@+id/snowball"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:text="Hello friends. I’m Snowball, I’m a sweet young lad. I can be a little shy when I first meet new people, and as you can see, I like to hide in the back of my pod, but don’t worry, once I get to know you, I’ll just give you all the love in the world."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/snowballinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark"/>
+
+            <ImageView
+                android:layout_width="126dp"
+                android:layout_height="149dp"
+                app:srcCompat="@drawable/patty"
+                android:id="@+id/patty"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:text="Hey there! I’m Patty, I’m a sweet 6-7 year old lady. I came to the DSPCA after I was found wandering with my pal Selma. I was so scared when I first arrived, I wouldn’t let anyone pet me and hissed when someone tried to touch me. After lots of hard work by the cattery team, I’ve really come out of my shell and made so much progress."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pattyinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark"/>
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="241dp"
+                app:srcCompat="@drawable/monty"
+                android:id="@+id/monty"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:text="Hello friends. My name’s Monty. I’m a lovely 8-9 year old fella. I was adopted from the DSPCA in 2010, but unfortunately due a change in my owners circumstances, I had to come back to the DSPCA. I’m a sweet, placid lad when I get to know you, but I can be a little shy at first."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/montyinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark"/>
+
+            <ImageView
+                android:layout_width="256dp"
+                android:layout_height="259dp"
+                app:srcCompat="@drawable/ludo"
+                android:id="@+id/ludo"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:text="Hello! Ludo is my name, I’m a 6 year old male. I came to the DSPCA as my owners could no longer keep me. I usually have beautiful long hair, but it became very matted and had to be shaved, but it’ll grow back!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ludoinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark"/>
+
+            <ImageView
+                android:layout_width="295dp"
+                android:layout_height="225dp"
+                app:srcCompat="@drawable/dice"
+                android:id="@+id/dice"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:text="Hi, Dice is my name. I’m a quiet girl who loves her beauty sleep. I was brought to the DSPCA because I was found on the streets with no where to go. I’m a lovely lady, but a quieter home would probably suit me better, somewhere I can chill in the sun and relax."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diceinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark"/>
+
+            <ImageView
+                android:layout_width="252dp"
+                android:layout_height="187dp"
+                app:srcCompat="@drawable/castle"
+                android:id="@+id/castle"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:text="Hello. My name is Castle, and I’m a 3 – 4 year old male. I came to the DSPCA as I was found on the streets with a sore wound on my cheek. I’m all better now and ready to find that special someone to take me home with them. I’m a very friendly boy, and I love the sound of my own voice, so will chat away to you while you pet me."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/castleinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark"/>
+
+            <ImageView
+                android:layout_width="246dp"
+                android:layout_height="183dp"
+                app:srcCompat="@drawable/blaine"
+                android:id="@+id/blaine"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:text="Hey friends. My name’s Blaine. I’m a gorgeous older lad. I was brought to the DSPCA after I was found living outside, no one’s really sure how long I spent living in the great outdoors but it was a while. I’m a bit spooked by everything that’s going on here in the cattery, it’s all so new and loud, so I’d love to go to my new home soon."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/blaineinfo"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_dark"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

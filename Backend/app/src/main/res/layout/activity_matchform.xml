@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dspcalogo2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:id="@+id/imageView7" />
+
+            <TextView
+                android:text="Please fill in all questions below"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView7"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="47dp"
+                android:id="@+id/announcement"
+                android:textSize="18sp"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:text="What age dog would you prefer?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/living_situ"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:id="@+id/dogage"
+                android:textColor="@android:color/background_dark" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dogage"
+                android:layout_alignLeft="@+id/living"
+                android:layout_alignStart="@+id/living"
+                android:layout_marginTop="40dp"
+                android:id="@+id/age" />
+
+            <TextView
+                android:text="What size dog would you prefer?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/size"
+                android:textColor="@android:color/background_dark" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dogsize" />
+
+            <TextView
+                android:text="Would you prefer male or female?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender"
+                android:textColor="@android:color/background_dark"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/doggender" />
+
+            <TextView
+                android:text="How old are the residents of the home?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/suitability"
+                android:textColor="@android:color/background_dark"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dogsuitability" />
+
+            <TextView
+                android:text="What energy level do you want the dog to have?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/energylevel"
+                android:textColor="@android:color/background_dark"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/energy" />
+
+            <TextView
+                android:text="What is your current living situation?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/announcement"
+                android:layout_alignStart="@+id/announcement"
+                android:id="@+id/living"
+                android:textColor="@android:color/background_dark" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/living"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="21dp"
+                android:id="@+id/living_situ" />
+
+            <Button
+                android:text="Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit"
+                android:backgroundTint="@android:color/holo_orange_dark" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
