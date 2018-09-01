@@ -3,6 +3,7 @@ package com.example.cliona.backend;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -10,7 +11,7 @@ import android.widget.Toast;
 
 public class Profile extends AppCompatActivity {
 
-    Button button, adoption, foster, notice, apply, match, donate ;
+    Button button, adoption, foster, notice, apply, donate ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +22,6 @@ public class Profile extends AppCompatActivity {
         foster = (Button) findViewById(R.id.foster);
         notice = (Button) findViewById(R.id.notice);
         apply = (Button) findViewById(R.id.apply);
-        match = (Button) findViewById(R.id.match);
         donate = (Button) findViewById(R.id.donate);
 
 
@@ -51,8 +51,6 @@ public class Profile extends AppCompatActivity {
                 Intent intent = new Intent(Profile.this, AdoptionActivity.class);
 
                 startActivity(intent);
-
-
             }
         });
 
@@ -63,7 +61,6 @@ public class Profile extends AppCompatActivity {
                 Intent intent = new Intent(Profile.this, FosterActivity.class);
 
                 startActivity(intent);
-
             }
         });
 
@@ -79,17 +76,6 @@ public class Profile extends AppCompatActivity {
         });
 
         apply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(Profile.this, AppForm.class);
-
-                startActivity(intent);
-
-            }
-        });
-
-        match.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

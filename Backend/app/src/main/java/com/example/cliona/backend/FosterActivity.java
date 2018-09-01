@@ -1,8 +1,5 @@
 package com.example.cliona.backend;
 
-/**
- * Created by Cliona on 31/03/2018.
- */
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -29,7 +26,7 @@ import android.widget.TextView;
 
 public class FosterActivity extends AppCompatActivity {
 
-    private static final String TAG = "AdoptionActivity";
+    private static final String TAG = "FosterActivity";
 
     private SectionsPageAdapter mSectionsPageAdapter;
 
@@ -38,24 +35,35 @@ public class FosterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_foster);
         Log.d(TAG, "onCreate: Starting.");
-
         mSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
-        setupViewPager(mViewPager);
+        mViewPager = (ViewPager)findViewById(R.id.container);
+        Log.d("ClionaLog","printing mviewpager");
+        Log.d("ClionaLog",mViewPager.toString());
+
+
+        Log.d("ClionaLog","setting up mviewpager");
+
+        setupViewPager(mViewPager); //HERE >:(
+        Log.d("ClionaLog","gettingtablayout");
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        Log.d("ClionaLog","tableayout setupwithviee");
+
         tabLayout.setupWithViewPager(mViewPager);
+        Log.d("ClionaLog","Finished fostering oncreate");
+
     }
 
     private void setupViewPager(ViewPager viewPager) {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new DogFragment(), "Dogs");
-        adapter.addFragment(new CatFragment(), "Cats");
-        adapter.addFragment(new OtherFragment(), "Other");
+        adapter.addFragment(new FosterDogFrag(), "Dogs");
+        adapter.addFragment(new FosterCatFrag(), "Cats");
+        adapter.addFragment(new FosterOtherFrag(), "Other");
         viewPager.setAdapter(adapter);
     }
 }

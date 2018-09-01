@@ -24,7 +24,7 @@
                 android:id="@+id/imageView7" />
 
             <TextView
-                android:text="Please fill in all questions below"
+                android:text="Please fill in all of the below"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageView7"
@@ -37,93 +37,71 @@
                 android:textSize="18sp"
                 android:textColor="@android:color/background_dark" />
 
-            <TextView
-                android:text="What age dog would you prefer?"
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/living_situ"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="40dp"
-                android:id="@+id/dogage"
-                android:textColor="@android:color/background_dark" />
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/name"
+                android:text="Name" />
 
-            <Spinner
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/dogage"
-                android:layout_alignLeft="@+id/living"
-                android:layout_alignStart="@+id/living"
-                android:layout_marginTop="40dp"
-                android:id="@+id/age" />
+                android:inputType="textPersonName"
+                android:text="Address"
+                android:ems="10"
+                android:id="@+id/address" />
 
-            <TextView
-                android:text="What size dog would you prefer?"
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/size"
-                android:textColor="@android:color/background_dark" />
+                android:inputType="textPersonName"
+                android:text="Email"
+                android:ems="10"
+                android:id="@+id/email" />
 
-            <Spinner
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/dogsize" />
+                android:inputType="textPersonName"
+                android:text="Animal Species"
+                android:ems="10"
+                android:id="@+id/animalType" />
 
-            <TextView
-                android:text="Would you prefer male or female?"
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/gender"
-                android:textColor="@android:color/background_dark"/>
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/doggender" />
+                android:inputType="textPersonName"
+                android:text="Animal's @string/app_name"
+                android:ems="10"
+                android:id="@+id/animalName" />
 
             <TextView
-                android:text="How old are the residents of the home?"
+                android:text="Do you live with any other people?"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/suitability"
-                android:textColor="@android:color/background_dark"
-                />
+                android:id="@+id/otherP" />
 
-            <Spinner
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/dogsuitability" />
-
-            <TextView
-                android:text="What energy level do you want the dog to have?"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/energylevel"
-                android:textColor="@android:color/background_dark"/>
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/energy" />
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/otherPeople" />
 
             <TextView
-                android:text="What is your current living situation?"
+                android:text="Do you own any other pets?"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_alignLeft="@+id/announcement"
-                android:layout_alignStart="@+id/announcement"
-                android:id="@+id/living"
-                android:textColor="@android:color/background_dark" />
+                android:id="@+id/otherA" />
 
-            <Spinner
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/living"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="21dp"
-                android:id="@+id/living_situ" />
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/otherPets" />
 
             <Button
                 android:text="Submit"

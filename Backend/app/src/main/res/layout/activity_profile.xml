@@ -12,90 +12,79 @@
     tools:context="com.example.cliona.backend.Profile"
     >
 
+    <Button
+        android:text="Noticeboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notice"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_alignBaseline="@+id/foster"
+        android:layout_alignBottom="@+id/foster"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/donate"
+        android:textColor="@android:color/background_dark"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_alignBaseline="@+id/apply"
+        android:layout_alignBottom="@+id/apply"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
+
+    <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_alignBaseline="@+id/adoption"
+        android:layout_alignBottom="@+id/adoption"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/dspcalogo"
+        android:id="@+id/imageView3"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/imageView3" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:text="Logout"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:layout_below="@+id/imageView3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Adoption Area"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/adoption"
-        android:backgroundTint="@android:color/holo_orange_dark"
+        android:background="@android:color/holo_orange_dark"
         android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="10dp" />
+        android:layout_alignRight="@+id/foster"
+        android:layout_alignEnd="@+id/foster" />
 
     <Button
         android:text="Fostering Area"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/foster"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:layout_marginTop="19dp"
+        android:background="@android:color/holo_orange_dark"
         android:layout_below="@+id/adoption"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="Noticeboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/notice"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:layout_toRightOf="@+id/adoption"
-        android:layout_toEndOf="@+id/adoption"
-        android:layout_marginLeft="107dp"
-        android:layout_marginStart="107dp"
-        android:layout_alignTop="@+id/foster" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
 
     <Button
         android:text="Apply for an Animal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/notice"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="37dp"
         android:id="@+id/apply"
         android:background="@android:color/holo_orange_dark"
-        android:textColor="@android:color/background_dark" />
-
-    <Button
-        android:text="Find my best dog fit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/apply"
-        android:layout_alignLeft="@+id/notice"
-        android:layout_alignStart="@+id/notice"
-        android:id="@+id/match"
         android:textColor="@android:color/background_dark"
-        android:backgroundTint="@android:color/holo_orange_dark" />
-
-    <Button
-        android:text="Donate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/apply"
+        android:layout_below="@+id/foster"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/donate" />
-
+        android:layout_marginTop="39dp" />
 
 </RelativeLayout>

@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText username, password ;
     String NameHolder, PasswordHolder ;
     boolean CheckEditText ;
-    String ServerLoginURL = "http://192.168.0.206:80/hw.php";
+    String ServerLoginURL = "http://192.168.0.207:80/hw.php";
     String finalResult ;
     HashMap<String,String> hashMap = new HashMap<>();
     URL url;
@@ -99,8 +99,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void LoginFunction(final String email, final String password){
-
-        Toast.makeText(LoginActivity.this,"Button Clicked",Toast.LENGTH_SHORT).show();
+        Log.d("Clionaloginfunction", "LoginFunction");
 
         class LoginFunctionClass extends AsyncTask<String,Void,String> {
 
@@ -138,6 +137,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 hashMap.put("password",params[1]);
 
+
+
                 finalResult = loginParseClass.postRequest(hashMap);
 
                 return finalResult;
@@ -148,102 +149,64 @@ public class LoginActivity extends AppCompatActivity {
         loginFunctionClass.execute(email,password);
     }
 
-    public void ConnectionTest() {
-        Log.d("Clionalog", "connection test");
-
-        try {
-            URL url = new URL(ServerLoginURL);
-            Log.d("Clionalog", "preparing to Connect to " + ServerLoginURL);
-
-            HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-            urlConnection.setRequestMethod("POST");
-            Log.d("Clionalog", "calling Connect to " + ServerLoginURL);
-
-            urlConnection.connect();
-            Log.d("Clionalog", "Connected to " + ServerLoginURL);
-
-            InputStream inputStream = urlConnection.getInputStream();
-            Log.d("Clionalog", "Retrieved Input Stream");
-
-            StringBuffer buffer = new StringBuffer();
-            if (inputStream == null) {
-                Log.d("Clionalog", "no input found");
-            }
-
-            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                buffer.append(line + "\n");
-            }
-            String str = buffer.toString();
-            Log.d("Clionalog", "return is " + str);
-
-        } catch (Exception e) {
-            Log.d("clionalog", e.toString());
-            e.printStackTrace();
-        }
-    }
     public class LoginParseClass
     {
 
         public String postRequest(HashMap<String, String> Data)
         {
-            Log.d("Cliona", "data is: " + Data);
-            ConnectionTest();
-
+            Log.d("ClionalogLoginParse", "data is: " + Data);
 
             try {
                 url = new URL(ServerLoginURL);
-                Log.d("Cliona LOgs", "ConnectionTest finished");
+                Log.d("ClionalogLoginParse", "ConnectionTest finished");
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
 
                 httpURLConnection.setReadTimeout(12000);
-
                 httpURLConnection.setConnectTimeout(12000);
-                Log.d("Cliona LOgs", "ConnectionTimeout");
+
+                Log.d("ClionalogLoginParse", "ConnectionTimeout");
+                Log.d("ClionalogLoginParse", "username is " + hashMap.get("username"));
+                Log.d("ClionalogLoginParse", "password is " + hashMap.get("password"));
 
                 httpURLConnection.setRequestMethod("POST");
-
+                httpURLConnection.setRequestProperty("username", hashMap.get("username"));
+                httpURLConnection.setRequestProperty("password", hashMap.get("password"));
 
                 httpURLConnection.setDoInput(true);
-
                 httpURLConnection.setDoOutput(true);
 
-                outputStream = httpURLConnection.getOutputStream();
-                Log.d("Cliona LOgs", "OutputStream");
+                httpURLConnection.connect();
+                InputStream inputStream = httpURLConnection.getInputStream();
+                Log.d("ClionalogConnectiontest", "Retrieved Input Stream");
 
-                bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-
-                bufferedWriter.write(FinalDataParse(Data));
-                Log.d("Cliona LOgs", "FinalDataParse");
-
-                bufferedWriter.flush();
-                Log.d("Cliona LOgs", "flush");
-
-                bufferedWriter.close();
-                Log.d("Cliona LOgs", "bufferedWriter.close");
-
-                outputStream.close();
-                Log.d("Cliona LOgs", "outputStream.close");
-
-                if (httpURLConnection.getResponseCode() == HttpsURLConnection.HTTP_OK) {
-                    Log.d("Cliona LOgs", "getresponsecode");
-
-                    bufferedReader = new BufferedReader(
-                            new InputStreamReader(
-                                    httpURLConnection.getInputStream()
-                            )
-                    );
-
-                    Log.d("Cliona LOgs", "new bufferedreader");
-
-                    FinalHttpData = bufferedReader.readLine();
+                StringBuffer buffer = new StringBuffer();
+                if (inputStream == null) {
+                    Log.d("ClionalogLoginParse", "no input found");
                 }
-                else {
-                    FinalHttpData = "Something Went Wrong";
+
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    buffer.append(line + "\n");
+
+                    if(line.contains("Data Matched"))
+                    {
+                        Intent intent = new Intent(LoginActivity.this, Profile.class);
+                        startActivity(intent);
+
+                        Log.d("ClionalogLoginParse", "login yes");
+                    }
+                    else if(line.contains("Invalid"))
+                    {
+                        Log.d("ClionalogLoginParse", "login no");
+                    }
+
+
                 }
+                String str = buffer.toString();
+                Log.d("ClionalogLoginParse", "return is " + str);
             } catch (Exception e) {
-                e.printStackTrace();
+                Log.d("ClionalogLoginParse", "Exception:" + e.toString());
             }
 
             return FinalHttpData;

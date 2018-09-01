@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
-        android:text="Cats Available for adoption:"
+        android:text="Cats Available for fostering:"
         android:layout_marginTop="120dp"
         android:id="@+id/text"
         android:layout_alignParentTop="true"

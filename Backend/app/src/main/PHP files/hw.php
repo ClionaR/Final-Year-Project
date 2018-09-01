@@ -8,20 +8,11 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
  $url = mysqli_connect($servername,$username,$password,$dbname);
  echo "connect \n";
  
- echo "in" .$_POST["username"]. "!";
- echo "passed in" . $_POST["password"] . "!";
- if (isset($_POST['value'])) 
- { 
- // Instructions if $_POST['value'] exist 
-  $name = $_POST['username'];
-  echo "username is: " + $name;
- } 
-  if (isset($_POST['value'])) 
- {  
- // Instructions if $_POST['value'] exist 
-  $pwd = $_POST['password'];
-  echo "password is: " + $pwd;
- } 
+ echo "username passed in " .$_SERVER['HTTP_USERNAME']. "!\n";
+ echo "password passed in " . $_SERVER['HTTP_PASSWORD'] . "!\n";
+ $name = $_SERVER['HTTP_USERNAME'];
+ $pwd = $_SERVER['HTTP_PASSWORD'];
+ 
  
  echo "variables input \n";
  

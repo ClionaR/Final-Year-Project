@@ -23,6 +23,8 @@ public class OtherFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.adopt_other,container,false);
 
+
+        adopt = (Button)view.findViewById(R.id.adopt);
         adopt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
